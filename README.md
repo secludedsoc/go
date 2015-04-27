@@ -13,11 +13,7 @@ to ensure compatibility with them.
 
 I hope you find this library to be useful and easy to use!
 
-Note: forked from <https://github.com/jeramey/go-pwhash>
-
-## Installation
-
-	go get github.com/kless/osutil/user/crypt
+Note: forked from <https://github.com/jeramey/go-pwhash && github.com/kless/osutil/user/crypt
 
 ## License
 

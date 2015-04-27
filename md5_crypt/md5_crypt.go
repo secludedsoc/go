@@ -13,13 +13,8 @@ import (
 	"bytes"
 	"crypto/md5"
 
-	"github.com/kless/osutil/user/crypt"
-	"github.com/kless/osutil/user/crypt/common"
+	"../common"
 )
-
-func init() {
-	crypt.RegisterCrypt(crypt.MD5, New, MagicPrefix)
-}
 
 // NOTE: Cisco IOS only allows salts of length 4.
 
@@ -30,12 +25,12 @@ const (
 	RoundsDefault = 1000
 )
 
-type crypter struct{ Salt common.Salt }
+type crypter struct{ Salt crypt.Salt }
 
 // New returns a new crypt.Crypter computing the MD5-crypt password hashing.
 func New() crypt.Crypter {
 	return &crypter{
-		common.Salt{
+		crypt.Salt{
 			MagicPrefix:   []byte(MagicPrefix),
 			SaltLenMin:    SaltLenMin,
 			SaltLenMax:    SaltLenMax,
@@ -49,13 +44,13 @@ func (c *crypter) Generate(key, salt []byte) (string, error) {
 		salt = c.Salt.Generate(SaltLenMax)
 	}
 	if !bytes.HasPrefix(salt, c.Salt.MagicPrefix) {
-		return "", common.ErrSaltPrefix
+		return "", crypt.ErrSaltPrefix
 	}
 
 	saltToks := bytes.Split(salt, []byte{'$'})
 
 	if len(saltToks) < 3 {
-		return "", common.ErrSaltFormat
+		return "", crypt.ErrSaltFormat
 	} else {
 		salt = saltToks[2]
 	}
@@ -129,7 +124,7 @@ func (c *crypter) Generate(key, salt []byte) (string, error) {
 	out = append(out, c.Salt.MagicPrefix...)
 	out = append(out, salt...)
 	out = append(out, '$')
-	out = append(out, common.Base64_24Bit([]byte{
+	out = append(out, crypt.Base64_24Bit([]byte{
 		Csum[12], Csum[6], Csum[0],
 		Csum[13], Csum[7], Csum[1],
 		Csum[14], Csum[8], Csum[2],
@@ -161,4 +156,4 @@ func (c *crypter) Verify(hashedKey string, key []byte) error {
 
 func (c *crypter) Cost(hashedKey string) (int, error) { return RoundsDefault, nil }
 
-func (c *crypter) SetSalt(salt common.Salt) { c.Salt = salt }
+func (c *crypter) SetSalt(salt crypt.Salt) { c.Salt = salt }

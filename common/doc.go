@@ -10,4 +10,4 @@
 //
 // Generally, you will never import this package directly. Many of the
 // *_crypt packages will import this package if they require it.
-package common
+package crypt

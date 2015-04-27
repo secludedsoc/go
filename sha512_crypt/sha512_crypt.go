@@ -17,13 +17,8 @@ import (
 	"crypto/sha512"
 	"strconv"
 
-	"github.com/kless/osutil/user/crypt"
-	"github.com/kless/osutil/user/crypt/common"
+	"../common"
 )
-
-func init() {
-	crypt.RegisterCrypt(crypt.SHA512, New, MagicPrefix)
-}
 
 const (
 	MagicPrefix   = "$6$"
@@ -36,12 +31,12 @@ const (
 
 var _rounds = []byte("rounds=")
 
-type crypter struct{ Salt common.Salt }
+type crypter struct{ Salt crypt.Salt }
 
 // New returns a new crypt.Crypter computing the SHA512-crypt password hashing.
 func New() crypt.Crypter {
 	return &crypter{
-		common.Salt{
+		crypt.Salt{
 			MagicPrefix:   []byte(MagicPrefix),
 			SaltLenMin:    SaltLenMin,
 			SaltLenMax:    SaltLenMax,
@@ -60,19 +55,19 @@ func (c *crypter) Generate(key, salt []byte) (string, error) {
 		salt = c.Salt.GenerateWRounds(SaltLenMax, RoundsDefault)
 	}
 	if !bytes.HasPrefix(salt, c.Salt.MagicPrefix) {
-		return "", common.ErrSaltPrefix
+		return "", crypt.ErrSaltPrefix
 	}
 
 	saltToks := bytes.Split(salt, []byte{'$'})
 	if len(saltToks) < 3 {
-		return "", common.ErrSaltFormat
+		return "", crypt.ErrSaltFormat
 	}
 
 	if bytes.HasPrefix(saltToks[2], _rounds) {
 		isRoundsDef = true
 		pr, err := strconv.ParseInt(string(saltToks[2][7:]), 10, 32)
 		if err != nil {
-			return "", common.ErrSaltRounds
+			return "", crypt.ErrSaltRounds
 		}
 		rounds = int(pr)
 		if rounds < RoundsMin {
@@ -182,7 +177,7 @@ func (c *crypter) Generate(key, salt []byte) (string, error) {
 	}
 	out = append(out, salt...)
 	out = append(out, '$')
-	out = append(out, common.Base64_24Bit([]byte{
+	out = append(out, crypt.Base64_24Bit([]byte{
 		Csum[42], Csum[21], Csum[0],
 		Csum[1], Csum[43], Csum[22],
 		Csum[23], Csum[2], Csum[44],
@@ -238,7 +233,7 @@ func (c *crypter) Verify(hashedKey string, key []byte) error {
 func (c *crypter) Cost(hashedKey string) (int, error) {
 	saltToks := bytes.Split([]byte(hashedKey), []byte{'$'})
 	if len(saltToks) < 3 {
-		return 0, common.ErrSaltFormat
+		return 0, crypt.ErrSaltFormat
 	}
 
 	if !bytes.HasPrefix(saltToks[2], _rounds) {
@@ -249,4 +244,4 @@ func (c *crypter) Cost(hashedKey string) (int, error) {
 	return int(cost), err
 }
 
-func (c *crypter) SetSalt(salt common.Salt) { c.Salt = salt }
+func (c *crypter) SetSalt(salt crypt.Salt) { c.Salt = salt }
