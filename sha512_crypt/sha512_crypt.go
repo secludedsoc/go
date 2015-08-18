@@ -17,7 +17,7 @@ import (
 	"crypto/sha512"
 	"strconv"
 
-	"../common"
+	"github.com/tridentli/osutil-crypt/common"
 )
 
 const (
