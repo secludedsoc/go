@@ -95,7 +95,13 @@ func NewFromHash(hashedKey string) (Crypter, error) {
 		f = crypts[APR1]
 	} else {
 		toks := strings.SplitN(hashedKey, "$", 3)
+
+		if len(toks) < 2 {
+			return nil, errors.New("crypt: Not a dollar-coded hash")
+		}
+
 		prefix := "$" + toks[1] + "$"
+
 		return nil, errors.New("crypt: unknown cryp function from prefix: " + prefix)
 	}
 
