@@ -14,10 +14,10 @@ import (
 	"appengine/memcache"
 	"appengine/urlfetch"
 
-	"code.google.com/p/rsc/appfs/fs"
-	_ "code.google.com/p/rsc/appfs/server"
-	_ "code.google.com/p/rsc/blog/post"
-	"code.google.com/p/rsc/issue/dashboard"
+	"github.com/tridentli/go/rsc/appfs/fs"
+	_ "github.com/tridentli/go/rsc/appfs/server"
+	_ "github.com/tridentli/go/rsc/blog/post"
+	"github.com/tridentli/go/rsc/issue/dashboard"
 )
 
 func init() {
@@ -52,7 +52,7 @@ func Admin(w http.ResponseWriter, req *http.Request) {
 func Dashboard(w http.ResponseWriter, req *http.Request) {
 	httpCache(w, 5*time.Minute)
 	ctxt := fs.NewContext(req)
-	ctxt.ServeFile(w, req, "issue-dashboard/" + strings.TrimPrefix(req.URL.Path, "/dashboard/"))
+	ctxt.ServeFile(w, req, "issue-dashboard/"+strings.TrimPrefix(req.URL.Path, "/dashboard/"))
 }
 
 func AdminDashboard(w http.ResponseWriter, req *http.Request) {

@@ -4,7 +4,7 @@
 
 package google
 
-import "code.google.com/p/rsc/xmpp"
+import "github.com/tridentli/go/rsc/xmpp"
 
 type ChatID struct {
 	ID        string

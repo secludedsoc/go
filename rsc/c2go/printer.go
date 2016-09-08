@@ -11,7 +11,7 @@ import (
 	"path"
 	"strings"
 
-	"code.google.com/p/rsc/cc"
+	"github.com/tridentli/go/rsc/cc"
 )
 
 type PrintSpecial int

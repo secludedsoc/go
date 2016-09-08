@@ -21,7 +21,7 @@ import (
 	"strings"
 	"time"
 
-	"code.google.com/p/rsc/plist"
+	"github.com/tridentli/go/rsc/plist"
 	"launchpad.net/goamz/aws"
 	"launchpad.net/goamz/s3"
 )

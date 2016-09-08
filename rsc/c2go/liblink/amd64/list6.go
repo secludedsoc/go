@@ -3,7 +3,7 @@ package amd64
 import (
 	"fmt"
 
-	"code.google.com/p/rsc/c2go/liblink"
+	"github.com/tridentli/go/rsc/c2go/liblink"
 )
 
 // Inferno utils/6c/list.c

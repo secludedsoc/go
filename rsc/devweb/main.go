@@ -12,7 +12,7 @@
 //	package main
 //
 //	import (
-//		"code.google.com/p/rsc/devweb/slave"
+//		"github.com/tridentli/go/rsc/devweb/slave"
 //
 //		_ "this/package"
 //		_ "that/package"

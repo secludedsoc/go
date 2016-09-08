@@ -12,8 +12,8 @@ import (
 	"log"
 	"os"
 
-	"code.google.com/p/rsc/appfs/client"
-	"code.google.com/p/rsc/keychain"
+	"github.com/tridentli/go/rsc/appfs/client"
+	"github.com/tridentli/go/rsc/keychain"
 )
 
 var c client.Client

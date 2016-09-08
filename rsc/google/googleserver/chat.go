@@ -10,8 +10,8 @@ package main
 import (
 	"fmt"
 
-	"code.google.com/p/rsc/google"
-	"code.google.com/p/rsc/xmpp"
+	"github.com/tridentli/go/rsc/google"
+	"github.com/tridentli/go/rsc/xmpp"
 )
 
 type chatClient struct {

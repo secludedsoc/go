@@ -17,8 +17,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"code.google.com/p/rsc/c2go"
-	"code.google.com/p/rsc/cc"
+	"github.com/tridentli/go/rsc/c2go"
+	"github.com/tridentli/go/rsc/cc"
 )
 
 var (
