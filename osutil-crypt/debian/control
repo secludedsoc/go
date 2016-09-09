@@ -10,8 +10,8 @@ Build-Depends: debhelper (>> 9),
                ca-certificates
 Standards-Version: 3.9.6
 Homepage: https://trident.li
-Vcs-Browser: https://github.com/tridentli/osutil-crypt
-Vcs-Git: git://github.com/tridentli/osutil-crypt.git
+Vcs-Browser: https://github.com/tridentli/go/osutil-crypt
+Vcs-Git: git://github.com/tridentli/go.git
 
 Package: trident-osutil-crypt-dev
 Architecture: all
