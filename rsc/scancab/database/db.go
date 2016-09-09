@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	_ "code.google.com/p/gosqlite/sqlite3"
+	_ "github.com/mxk/go-sqlite/sqlite3"
 	"github.com/tridentli/go/rsc/dbstore"
 )
 

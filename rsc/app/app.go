@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"appengine"
-	"appengine/memcache"
-	"appengine/urlfetch"
+	"google.golang.org/appengine"
+	"google.golang.org/appengine/memcache"
+	"google.golang.org/appengine/urlfetch"
 
 	"github.com/tridentli/go/rsc/appfs/fs"
 	_ "github.com/tridentli/go/rsc/appfs/server"

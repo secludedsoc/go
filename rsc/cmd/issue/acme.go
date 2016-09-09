@@ -16,8 +16,8 @@ import (
 	"sync"
 	"time"
 
-	"code.google.com/p/goplan9/draw"
-	"code.google.com/p/goplan9/plan9/acme"
+	"github.com/9fans/go/draw"
+	"github.com/9fans/goplan9/acme"
 	"github.com/tridentli/go/rsc/issue"
 )
 

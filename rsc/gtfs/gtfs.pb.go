@@ -3,7 +3,7 @@
 
 package gtfs
 
-import proto "code.google.com/p/goprotobuf/proto"
+import proto "github.com/golang/protobuf/proto"
 import "math"
 
 // Reference proto, math & os imports to suppress error if they are not otherwise used.

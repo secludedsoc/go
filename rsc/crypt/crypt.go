@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"io"
 
-	"code.google.com/p/go.crypto/pbkdf2"
+	"github.com/golang/crypto/pbkdf2"
 )
 
 // This program manipulates encrypted, signed packets with the following format:

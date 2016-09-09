@@ -5,8 +5,8 @@
 package main
 
 import (
-	"debug/goobj"
 	"encoding/json"
+	"github.com/remyoudompheng/go-misc/debug/goobj"
 	"log"
 	"os"
 )
