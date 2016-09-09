@@ -16,8 +16,8 @@ import (
 	"sync"
 	"time"
 
-	"9fans.com/go/acme"
-	"9fans.com/go/draw"
+	"9fans.net/go/acme"
+	"9fans.net/go/draw"
 	"github.com/tridentli/go/rsc/issue"
 )
 

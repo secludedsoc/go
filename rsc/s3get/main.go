@@ -11,9 +11,9 @@ import (
 	"log"
 	"os"
 
+	"github.com/goamz/goamz/aws"
+	"github.com/goamz/goamz/s3"
 	"github.com/tridentli/go/rsc/keychain"
-	"launchpad.net/goamz/aws"
-	"launchpad.net/goamz/s3"
 )
 
 var list = flag.Bool("l", false, "list buckets")

@@ -21,8 +21,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goamz/goamz/goamz/aws"
-	"github.com/goamz/goamz/goamz/s3"
+	"github.com/goamz/goamz/aws"
+	"github.com/goamz/goamz/s3"
 	"github.com/tridentli/go/rsc/plist"
 )
 
