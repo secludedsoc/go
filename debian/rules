@@ -3,7 +3,7 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-export DH_GOPKG := trident.li/osutil-crypt
+export DH_GOPKG := trident.li/go/
 
 %:
 	dh $@ --buildsystem=golang --with=golang

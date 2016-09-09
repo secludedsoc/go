@@ -1,4 +1,4 @@
-Source: trident-osutil-crypt
+Source: trident-go
 Section: devel
 Priority: optional
 Maintainer: Trident Project <project@trident.li>
@@ -10,14 +10,14 @@ Build-Depends: debhelper (>> 9),
                ca-certificates
 Standards-Version: 3.9.6
 Homepage: https://trident.li
-Vcs-Browser: https://github.com/tridentli/go/osutil-crypt
+Vcs-Browser: https://github.com/tridentli/go/
 Vcs-Git: git://github.com/tridentli/go.git
 
-Package: trident-osutil-crypt-dev
+Package: trident-go-dev
 Architecture: all
 Built-Using: ${misc:Built-Using}
-Description: Trident OS Utility Crypt (Development Library)
- Trident's edition of OS Util Crypt
+Description: Trident Go Dependencies (Development Library)
+ Trident's Go Dependencies
  .
  This package only contains source, no binaries; it is to be used by
  other golang packages.
