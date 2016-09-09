@@ -13,7 +13,7 @@ import (
 	"bytes"
 	"crypto/md5"
 
-	"trident.li/osutil-crypt/common"
+	"github.com/tridentli/go/osutil-crypt/common"
 )
 
 // NOTE: Cisco IOS only allows salts of length 4.

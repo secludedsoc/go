@@ -9,11 +9,11 @@
 package crypt
 
 import (
-	"trident.li/osutil-crypt/apr1_crypt"
-	"trident.li/osutil-crypt/common"
-	"trident.li/osutil-crypt/md5_crypt"
-	"trident.li/osutil-crypt/sha256_crypt"
-	"trident.li/osutil-crypt/sha512_crypt"
+	"github.com/tridentli/go/osutil-crypt/apr1_crypt"
+	"github.com/tridentli/go/osutil-crypt/common"
+	"github.com/tridentli/go/osutil-crypt/md5_crypt"
+	"github.com/tridentli/go/osutil-crypt/sha256_crypt"
+	"github.com/tridentli/go/osutil-crypt/sha512_crypt"
 )
 
 func init() {
