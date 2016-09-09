@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang/oauth2"
+	"golang.org/x/oauth2"
 )
 
 // A Printer represents a Google Cloud Print printer.

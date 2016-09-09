@@ -16,7 +16,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/golang/oauth2"
+	"golang.org/x/oauth2"
 )
 
 // Token obtains an OAuth token, keeping a cached copy in file.

@@ -17,7 +17,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/golang/oauth2"
+	"golang.org/x/oauth2"
 )
 
 const cloudprintURL = "https://www.google.com/cloudprint"
