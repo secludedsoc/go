@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"code.google.com/p/goplan9/plan9/acme"
+	"9fans.net/go/plan9/acme"
 	"github.com/tridentli/go/rsc/google"
 	"github.com/tridentli/go/rsc/xmpp"
 )
