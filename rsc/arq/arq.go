@@ -21,9 +21,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/goamz/goamz/goamz/aws"
+	"github.com/goamz/goamz/goamz/s3"
 	"github.com/tridentli/go/rsc/plist"
-	"launchpad.net/goamz/aws"
-	"launchpad.net/goamz/s3"
 )
 
 // A Conn represents a connection to an S3 server holding Arq backups.

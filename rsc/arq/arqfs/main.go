@@ -67,10 +67,10 @@ import (
 	"os/exec"
 	"syscall"
 
+	"github.com/goamz/goamz/aws"
 	"github.com/tridentli/go/rsc/arq"
 	"github.com/tridentli/go/rsc/fuse"
 	"github.com/tridentli/go/rsc/keychain"
-	"launchpad.net/goamz/aws"
 )
 
 var mtpt = flag.String("m", "/mnt/arq", "")

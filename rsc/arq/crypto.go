@@ -11,7 +11,7 @@ import (
 	"hash"
 	"log"
 
-	"bitbucket.org/taruti/pbkdf2.go" // TODO: Pull in copy
+	"golang.org/x/crypto/pbkdf2"
 )
 
 type cryptoState struct {
