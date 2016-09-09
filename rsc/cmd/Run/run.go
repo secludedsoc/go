@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	"9fans.net/go/plan9/acme"
+	"9fans.net/go/acme"
 )
 
 var _ = fmt.Printf

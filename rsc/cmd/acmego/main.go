@@ -20,7 +20,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"9fans.net/go/plan9/acme"
+	"9fans.net/go/acme"
 )
 
 var gofmt = flag.Bool("f", false, "gofmt after Put")
