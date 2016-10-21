@@ -5,4 +5,4 @@ It is NOT expected that code here can be used directly. Please don't.
 
 # Trident addon:
 
-Hence, github.com/tridentli/go/rsc/ instead.
+Hence, trident.li/go/rsc/ instead.

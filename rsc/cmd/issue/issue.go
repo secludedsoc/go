@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tridentli/go/rsc/issue"
-	"github.com/tridentli/go/rsc/oauthprompt"
+	"trident.li/go/rsc/issue"
+	"trident.li/go/rsc/oauthprompt"
 )
 
 var auth struct {

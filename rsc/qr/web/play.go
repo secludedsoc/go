@@ -44,11 +44,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tridentli/go/rsc/appfs/fs"
-	"github.com/tridentli/go/rsc/gf256"
-	"github.com/tridentli/go/rsc/qr"
-	"github.com/tridentli/go/rsc/qr/coding"
-	"github.com/tridentli/go/rsc/qr/web/resize"
+	"trident.li/go/rsc/appfs/fs"
+	"trident.li/go/rsc/gf256"
+	"trident.li/go/rsc/qr"
+	"trident.li/go/rsc/qr/coding"
+	"trident.li/go/rsc/qr/web/resize"
 )
 
 func runTemplate(c *fs.Context, w http.ResponseWriter, name string, data interface{}) {

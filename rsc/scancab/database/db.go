@@ -18,7 +18,7 @@ import (
 	"time"
 
 	_ "github.com/mxk/go-sqlite/sqlite3"
-	"github.com/tridentli/go/rsc/dbstore"
+	"trident.li/go/rsc/dbstore"
 )
 
 // A DB holds metadata for the scanning cabinet.
@@ -168,7 +168,7 @@ func (db *DB) Delete(doc *Doc) error {
 // after skipping the first offset results.
 func (db *DB) Search(query, sortBy string, offset, count int) ([]*Doc, error) {
 	var docs []*Doc
-	err := db.store.Select(db.meta, &docs, `where "ID" in (select "ID" from "github.com/tridentli/go/rsc/scancab/database.text" where "code.google.com/p/rsc/scancab/database.text" match ?) order by `+sortBy+` limit ? offset ?`, query, count, offset)
+	err := db.store.Select(db.meta, &docs, `where "ID" in (select "ID" from "trident.li/go/rsc/scancab/database.text" where "code.google.com/p/rsc/scancab/database.text" match ?) order by `+sortBy+` limit ? offset ?`, query, count, offset)
 	if err != nil {
 		return nil, err
 	}

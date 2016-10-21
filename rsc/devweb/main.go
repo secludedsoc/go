@@ -12,7 +12,7 @@
 //	package main
 //
 //	import (
-//		"github.com/tridentli/go/rsc/devweb/slave"
+//		"trident.li/go/rsc/devweb/slave"
 //
 //		_ "this/package"
 //		_ "that/package"

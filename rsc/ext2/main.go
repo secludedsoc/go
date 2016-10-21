@@ -15,7 +15,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tridentli/go/rsc/ext2"
+	"trident.li/go/rsc/ext2"
 )
 
 func main() {

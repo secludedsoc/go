@@ -16,8 +16,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tridentli/go/rsc/keychain"
-	"github.com/tridentli/go/rsc/smugmug"
+	"trident.li/go/rsc/keychain"
+	"trident.li/go/rsc/smugmug"
 )
 
 const apiKey = "8qH4UgiunBKpsYpvcBXftbCYNEreAZ0m"

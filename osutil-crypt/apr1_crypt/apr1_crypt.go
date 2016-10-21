@@ -13,8 +13,8 @@
 package apr1_crypt
 
 import (
-	"github.com/tridentli/go/osutil-crypt/common"
-	"github.com/tridentli/go/osutil-crypt/md5_crypt"
+	"trident.li/go/osutil-crypt/common"
+	"trident.li/go/osutil-crypt/md5_crypt"
 )
 
 const (

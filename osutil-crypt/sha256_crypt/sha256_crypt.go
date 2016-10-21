@@ -17,7 +17,7 @@ import (
 	"crypto/sha256"
 	"strconv"
 
-	"github.com/tridentli/go/osutil-crypt/common"
+	"trident.li/go/osutil-crypt/common"
 )
 
 const (

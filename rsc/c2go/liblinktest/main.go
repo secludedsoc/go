@@ -10,10 +10,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tridentli/go/rsc/c2go/liblink"
-	"github.com/tridentli/go/rsc/c2go/liblink/amd64"
-	"github.com/tridentli/go/rsc/c2go/liblink/arm"
-	"github.com/tridentli/go/rsc/c2go/liblink/x86"
+	"trident.li/go/rsc/c2go/liblink"
+	"trident.li/go/rsc/c2go/liblink/amd64"
+	"trident.li/go/rsc/c2go/liblink/arm"
+	"trident.li/go/rsc/c2go/liblink/x86"
 )
 
 var arch *liblink.LinkArch

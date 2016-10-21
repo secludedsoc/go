@@ -13,7 +13,7 @@ import (
 
 	"github.com/goamz/goamz/aws"
 	"github.com/goamz/goamz/s3"
-	"github.com/tridentli/go/rsc/keychain"
+	"trident.li/go/rsc/keychain"
 )
 
 var list = flag.Bool("l", false, "list buckets")

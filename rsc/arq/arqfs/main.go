@@ -68,9 +68,9 @@ import (
 	"syscall"
 
 	"github.com/goamz/goamz/aws"
-	"github.com/tridentli/go/rsc/arq"
-	"github.com/tridentli/go/rsc/fuse"
-	"github.com/tridentli/go/rsc/keychain"
+	"trident.li/go/rsc/arq"
+	"trident.li/go/rsc/fuse"
+	"trident.li/go/rsc/keychain"
 )
 
 var mtpt = flag.String("m", "/mnt/arq", "")

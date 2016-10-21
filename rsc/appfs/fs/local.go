@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tridentli/go/rsc/appfs/proto"
+	"trident.li/go/rsc/appfs/proto"
 )
 
 type context struct{}

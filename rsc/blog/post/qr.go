@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	qrweb "github.com/tridentli/go/rsc/qr/web"
+	qrweb "trident.li/go/rsc/qr/web"
 )
 
 func carp(f http.HandlerFunc) http.Handler {

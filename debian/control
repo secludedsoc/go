@@ -10,8 +10,8 @@ Build-Depends: debhelper (>> 9),
                ca-certificates
 Standards-Version: 3.9.6
 Homepage: https://trident.li
-Vcs-Browser: https://github.com/tridentli/go/
-Vcs-Git: git://github.com/tridentli/go.git
+Vcs-Browser: https://trident.li/go/
+Vcs-Git: git://trident.li/go.git
 
 Package: trident-go-dev
 Architecture: all

@@ -9,7 +9,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/tridentli/go/rsc/fuse"
+	"trident.li/go/rsc/fuse"
 )
 
 func main() {

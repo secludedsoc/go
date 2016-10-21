@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tridentli/go/rsc/gf256"
+	"trident.li/go/rsc/gf256"
 )
 
 // Field is the field for QR error correction.

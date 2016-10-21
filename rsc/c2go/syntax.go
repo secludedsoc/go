@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tridentli/go/rsc/c2go"
-	"github.com/tridentli/go/rsc/cc"
+	"trident.li/go/rsc/c2go"
+	"trident.li/go/rsc/cc"
 )
 
 var goKeyword = map[string]string{

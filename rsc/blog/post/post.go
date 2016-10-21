@@ -18,9 +18,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tridentli/go/rsc/appfs/fs"
-	"github.com/tridentli/go/rsc/appfs/proto"
-	"github.com/tridentli/go/rsc/blog/atom"
+	"trident.li/go/rsc/appfs/fs"
+	"trident.li/go/rsc/appfs/proto"
+	"trident.li/go/rsc/blog/atom"
 )
 
 func init() {

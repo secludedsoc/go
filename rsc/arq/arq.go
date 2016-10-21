@@ -23,7 +23,7 @@ import (
 
 	"github.com/goamz/goamz/aws"
 	"github.com/goamz/goamz/s3"
-	"github.com/tridentli/go/rsc/plist"
+	"trident.li/go/rsc/plist"
 )
 
 // A Conn represents a connection to an S3 server holding Arq backups.

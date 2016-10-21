@@ -12,7 +12,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/tridentli/go/rsc/cc"
+	"trident.li/go/rsc/cc"
 )
 
 func main() {

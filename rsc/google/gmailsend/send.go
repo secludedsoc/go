@@ -12,7 +12,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/tridentli/go/rsc/google"
+	"trident.li/go/rsc/google"
 )
 
 func enc(s string) string {

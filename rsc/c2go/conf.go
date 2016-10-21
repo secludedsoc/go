@@ -11,7 +11,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tridentli/go/rsc/cc"
+	"trident.li/go/rsc/cc"
 )
 
 type Config struct {

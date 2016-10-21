@@ -14,10 +14,10 @@ import (
 	"google.golang.org/appengine/memcache"
 	"google.golang.org/appengine/urlfetch"
 
-	"github.com/tridentli/go/rsc/appfs/fs"
-	_ "github.com/tridentli/go/rsc/appfs/server"
-	_ "github.com/tridentli/go/rsc/blog/post"
-	"github.com/tridentli/go/rsc/issue/dashboard"
+	"trident.li/go/rsc/appfs/fs"
+	_ "trident.li/go/rsc/appfs/server"
+	_ "trident.li/go/rsc/blog/post"
+	"trident.li/go/rsc/issue/dashboard"
 )
 
 func init() {

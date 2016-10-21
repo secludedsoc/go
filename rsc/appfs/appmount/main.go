@@ -20,10 +20,10 @@ import (
 	"sync"
 	"runtime"
 
-	"github.com/tridentli/go/rsc/appfs/client"
-	"github.com/tridentli/go/rsc/appfs/proto"
-	"github.com/tridentli/go/rsc/fuse"
-	"github.com/tridentli/go/rsc/keychain"
+	"trident.li/go/rsc/appfs/client"
+	"trident.li/go/rsc/appfs/proto"
+	"trident.li/go/rsc/fuse"
+	"trident.li/go/rsc/keychain"
 )
 
 var usageMessage = `usage: appmount [-h host] [-u user] [-p password] /mnt

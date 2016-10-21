@@ -8,8 +8,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/tridentli/go/rsc/gf256"
-	"github.com/tridentli/go/rsc/qr/libqrencode"
+	"trident.li/go/rsc/gf256"
+	"trident.li/go/rsc/qr/libqrencode"
 )
 
 func test(t *testing.T, v Version, l Level, text ...Encoding) bool {

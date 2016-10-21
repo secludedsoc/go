@@ -23,8 +23,8 @@ import (
 	"time"
 
 	"9fans.net/go/acme"
-	"github.com/tridentli/go/rsc/google"
-	"github.com/tridentli/go/rsc/xmpp"
+	"trident.li/go/rsc/google"
+	"trident.li/go/rsc/xmpp"
 )
 
 var acmeDebug = flag.Bool("acmedebug", false, "print acme debugging")

@@ -14,7 +14,7 @@
 //
 //	import (
 //		"net/http"
-//		"github.com/tridentli/go/rsc/websrv"
+//		"trident.li/go/rsc/websrv"
 //	)
 //
 //	func main() {

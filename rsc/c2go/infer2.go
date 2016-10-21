@@ -8,8 +8,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/tridentli/go/rsc/c2go"
-	"github.com/tridentli/go/rsc/cc"
+	"trident.li/go/rsc/c2go"
+	"trident.li/go/rsc/cc"
 )
 
 // A flowSyntax is a node representing the flow of a value

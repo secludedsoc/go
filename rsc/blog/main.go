@@ -5,9 +5,9 @@
 package main
 
 import (
-	"github.com/tridentli/go/rsc/devweb/slave"
+	"trident.li/go/rsc/devweb/slave"
 
-	_ "github.com/tridentli/go/rsc/blog/post"
+	_ "trident.li/go/rsc/blog/post"
 )
 
 func main() {

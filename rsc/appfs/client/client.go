@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tridentli/go/rsc/appfs/proto"
+	"trident.li/go/rsc/appfs/proto"
 )
 
 type Client struct {

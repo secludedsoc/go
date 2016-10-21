@@ -15,8 +15,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/tridentli/go/rsc/google"
-	"github.com/tridentli/go/rsc/xmpp"
+	"trident.li/go/rsc/google"
+	"trident.li/go/rsc/xmpp"
 )
 
 func main() {

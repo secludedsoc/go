@@ -3,7 +3,7 @@ package x86
 import (
 	"fmt"
 
-	"github.com/tridentli/go/rsc/c2go/liblink"
+	"trident.li/go/rsc/c2go/liblink"
 )
 
 // Inferno utils/8c/list.c

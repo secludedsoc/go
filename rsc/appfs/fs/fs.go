@@ -24,7 +24,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/tridentli/go/rsc/appfs/proto"
+	"trident.li/go/rsc/appfs/proto"
 )
 
 type AppEngine interface {

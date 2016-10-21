@@ -16,8 +16,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/tridentli/go/rsc/google"
-	"github.com/tridentli/go/rsc/imap"
+	"trident.li/go/rsc/google"
+	"trident.li/go/rsc/imap"
 )
 
 var cmdtab = []struct {

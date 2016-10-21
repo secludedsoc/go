@@ -6,7 +6,7 @@ import (
 	"log"
 	"math"
 
-	"github.com/tridentli/go/rsc/c2go/liblink"
+	"trident.li/go/rsc/c2go/liblink"
 )
 
 // Inferno utils/6l/pass.c

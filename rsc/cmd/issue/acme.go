@@ -18,7 +18,7 @@ import (
 
 	"9fans.net/go/acme"
 	"9fans.net/go/draw"
-	"github.com/tridentli/go/rsc/issue"
+	"trident.li/go/rsc/issue"
 )
 
 func acmeMode() {

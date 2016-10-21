@@ -7,8 +7,8 @@
 package main
 
 import (
-	"github.com/tridentli/go/rsc/c2go"
-	"github.com/tridentli/go/rsc/cc"
+	"trident.li/go/rsc/c2go"
+	"trident.li/go/rsc/cc"
 )
 
 func unparen(x *cc.Expr) *cc.Expr {

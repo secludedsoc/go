@@ -10,8 +10,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/tridentli/go/rsc/appfs/fs"
-	"github.com/tridentli/go/rsc/issue/dashboard"
+	"trident.li/go/rsc/appfs/fs"
+	"trident.li/go/rsc/issue/dashboard"
 )
 
 func main() {

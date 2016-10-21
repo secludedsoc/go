@@ -24,8 +24,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tridentli/go/rsc/scancab/database"
-	"github.com/tridentli/go/rsc/websrv"
+	"trident.li/go/rsc/scancab/database"
+	"trident.li/go/rsc/websrv"
 )
 
 var (
@@ -39,7 +39,7 @@ var (
 )
 
 func main() {
-	pkg, _ := build.Import("github.com/tridentli/go/rsc/scancab", "", build.FindOnly)
+	pkg, _ := build.Import("trident.li/go/rsc/scancab", "", build.FindOnly)
 	if pkg.Dir != "" {
 		*lib = filepath.Join(pkg.Dir, "lib")
 	}

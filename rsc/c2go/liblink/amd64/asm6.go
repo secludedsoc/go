@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/tridentli/go/rsc/c2go/liblink"
+	"trident.li/go/rsc/c2go/liblink"
 )
 
 /*

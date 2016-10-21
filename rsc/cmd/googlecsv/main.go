@@ -24,7 +24,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tridentli/go/rsc/oauthprompt"
+	"trident.li/go/rsc/oauthprompt"
 )
 
 const (

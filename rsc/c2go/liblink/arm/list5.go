@@ -3,7 +3,7 @@ package arm
 import (
 	"fmt"
 
-	"github.com/tridentli/go/rsc/c2go/liblink"
+	"trident.li/go/rsc/c2go/liblink"
 )
 
 // Inferno utils/5c/list.c

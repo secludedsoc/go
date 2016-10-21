@@ -25,8 +25,8 @@ import (
 	"google.golang.org/appengine/memcache"
 	"google.golang.org/appengine/user"
 
-	"github.com/tridentli/go/rsc/appfs/fs"
-	"github.com/tridentli/go/rsc/appfs/proto"
+	"trident.li/go/rsc/appfs/fs"
+	"trident.li/go/rsc/appfs/proto"
 )
 
 const pwFile = "/.password"

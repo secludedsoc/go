@@ -17,7 +17,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/tridentli/go/rsc/rosetta/graph"
+	"trident.li/go/rsc/rosetta/graph"
 )
 
 type Maze struct {

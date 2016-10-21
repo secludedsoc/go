@@ -12,7 +12,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/tridentli/go/rsc/qr/coding"
+	"trident.li/go/rsc/qr/coding"
 )
 
 // A Level denotes a QR error correction level.
